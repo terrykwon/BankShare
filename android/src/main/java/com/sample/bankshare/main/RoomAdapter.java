@@ -47,9 +47,10 @@ class RoomAdapter extends RecyclerView.Adapter {
 
     void setRoomList(List<Room> rooms) {
         mRoomList = rooms;
+        notifyDataSetChanged();
     }
 
-    void setItemClickListener(OnItemClickListener listener) {
+    void setOnItemClickListener(OnItemClickListener listener) {
         mItemClickListener = listener;
     }
 
