@@ -1,4 +1,6 @@
-package com.sample.bankshare;
+package com.sample.bankshare.util;
+
+import com.sample.bankshare.model.Room;
 
 import java.util.ArrayList;
 import java.util.List;

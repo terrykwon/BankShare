@@ -1,4 +1,4 @@
-package com.sample.bankshare;
+package com.sample.bankshare.model;
 
 
 import android.support.annotation.NonNull;
