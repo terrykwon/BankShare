@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout of individual rooms -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView" />
+
+    <View
+        android:id="@+id/view_room_text_background"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="0dp"
+        android:background="#55000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_room_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Room name"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@id/view_room_text_background"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_room_description"
+        app:layout_constraintTop_toTopOf="@id/view_room_text_background"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/text_room_description"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Room description asdgads gasdgasgdsadg dsagsadga dsgsadgasdg adsgasdga dsgsadg asdgad sgasgads sadgasdgasdg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_room_text_background"
+        app:layout_constraintLeft_toLeftOf="@id/view_room_text_background"
+        app:layout_constraintRight_toRightOf="@id/view_room_text_background"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+</android.support.constraint.ConstraintLayout>
