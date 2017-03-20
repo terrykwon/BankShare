@@ -6,7 +6,7 @@
     android:layout_width="320dp"
     android:layout_height="match_parent"
     android:layout_gravity="right"
-    android:background="@color/cardview_dark_background">
+    android:background="#ffffff">
 
     <TextView
         android:id="@+id/text_account_drawer_header"
