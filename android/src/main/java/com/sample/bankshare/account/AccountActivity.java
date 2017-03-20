@@ -12,9 +12,10 @@ import com.sample.bankshare.util.DummyGenerator;
 
 public class AccountActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
-    private RecyclerView mUserRecycler, mAccountRecycler;
+    private RecyclerView mUserRecycler, mTransactionRecycler;
     private UserAdapter mUserAdapter;
-    private LinearLayoutManager mUserLayoutManager, mAccountLayoutManager;
+    private TransactionAdapter mTransactionAdapter;
+    private LinearLayoutManager mUserLayoutManager, mTransactionLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +34,16 @@ public class AccountActivity extends AppCompatActivity {
 
         // Debug
         mUserAdapter.setUserList(DummyGenerator.generateDummyUsers());
+
+
+        mTransactionRecycler = (RecyclerView) findViewById(R.id.recycler_account_transaction);
+        mTransactionLayoutManager = new LinearLayoutManager(this);
+        mTransactionAdapter = new TransactionAdapter();
+
+        mTransactionRecycler.setLayoutManager(mTransactionLayoutManager);
+        mTransactionRecycler.setAdapter(mTransactionAdapter);
+
+        // Debug
+        mTransactionAdapter.setTransactionList(DummyGenerator.generateDummyTransactions());
     }
 }
