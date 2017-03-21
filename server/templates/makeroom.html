@@ -1,0 +1,48 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../static/bootstrap4/css/bootstrap.min.css", rel="stylesheet">
+    <link href="../static/css/makeroom.css", rel="stylesheet">
+    <title>어따썼니?</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <form class="form-signup" action="/makeroom" method="POST">
+	<a href="/main">←</a>
+	<h3>방만들기</h3> <br><br>
+	<label for="inputRoomName" >방이름</label>
+	<input type="text" id="inputRoomName" name="roomname" class="form-control"  required autofocus>
+	<label for="inputEmail">방정보</label>
+	<input type="text" id="inputEmail" name="roominfo" class="form-control">
+	<label for="inputName">이름</label>
+	<input type="text" id="inputName" name="name" class="form-control" required >
+	<label for="inputBirth">생년월일</label>
+	<input type="text" id="inputBirth" name="birth" class="form-control"  required>
+	<label for="inputBank">은행</label>
+	<select type="text" id="inputBank" name="bank" class="form-control bank" required>
+	  <option>농협</option>
+	  <option>국민</option>
+	  <option>신한</option>
+	  <option>새마을</option>
+	  <option>우리</option>
+	  <option>농협</option>
+	  <option>외환</option>
+	  <option>하나</option>
+	</select>
+	<label for="inputBirth">계좌번호</label>
+	<input type="text" id="inputAccount" name="account" class="form-control"  required>
+
+	<button class="btn btn-lg btn-primary btn-block" type="submit">방만들기</button>
+      </form>
+
+    </div> <!-- /container -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
