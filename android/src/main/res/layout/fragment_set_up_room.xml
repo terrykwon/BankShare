@@ -8,7 +8,7 @@
     android:padding="@dimen/activity_horizontal_margin">
 
     <EditText
-        android:id="@+id/edittext_create_room_name"
+        android:id="@+id/edittext_set_up_room_name"
         android:hint="Room name"
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -17,13 +17,13 @@
         android:paddingRight="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/edittext_create_room_description"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_set_up_room_description"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_marginBottom="16dp" />
 
     <EditText
-        android:id="@id/edittext_create_room_description"
+        android:id="@id/edittext_set_up_room_description"
         android:hint="Room description"
         android:layout_width="0dp"
         android:layout_height="240dp"
@@ -33,17 +33,17 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edittext_create_room_name"
-        app:layout_constraintBottom_toTopOf="@+id/button_create_room_next" />
+        app:layout_constraintTop_toBottomOf="@id/edittext_set_up_room_name"
+        app:layout_constraintBottom_toTopOf="@+id/button_set_up_room_next" />
 
     <Button
-        android:id="@id/button_create_room_next"
+        android:id="@id/button_set_up_room_next"
         android:text="NEXT"
         android:layout_width="0dp"
         android:layout_height="56dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edittext_create_room_description"
+        app:layout_constraintTop_toBottomOf="@id/edittext_set_up_room_description"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 

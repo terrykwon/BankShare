@@ -47,18 +47,18 @@ public class UserAdapter extends RecyclerView.Adapter {
 
 
     private static class UserHolder extends RecyclerView.ViewHolder{
-        private TextView userText;
+        private TextView nameText;
         private ImageView profileImage;
 
         UserHolder(View itemView) {
             super(itemView);
 
-            userText = (TextView) itemView.findViewById(R.id.text_user_name);
+            nameText = (TextView) itemView.findViewById(R.id.text_user_name);
             profileImage = (ImageView) itemView.findViewById(R.id.image_user_profile);
         }
 
         void bind(User user) {
-            userText.setText(user.getName());
+            nameText.setText(user.getName());
         }
     }
 }
