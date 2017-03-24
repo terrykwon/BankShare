@@ -48,7 +48,7 @@ public class SetUpRoomFragment extends Fragment {
 
                 mSetUpRoomListener.onSetUpRoom(name, description);
 
-                Fragment fragment = SelectUsersFragment.newInstance();
+                Fragment fragment = SetUpAccountFragment.newInstance();
                 getFragmentManager().beginTransaction()
                         .replace(R.id.layout_create_room_container, fragment)
                         .addToBackStack(null)
