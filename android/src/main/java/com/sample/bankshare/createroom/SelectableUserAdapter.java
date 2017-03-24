@@ -22,20 +22,20 @@ public class SelectableUserAdapter extends RecyclerView.Adapter {
     private static List<User> mSelectedUsers;
     private OnItemCheckedChangeListener mItemCheckedChangeListener;
 
-    interface OnItemCheckedChangeListener {
+    public interface OnItemCheckedChangeListener {
         void OnItemChecked(User user, boolean checked);
     }
 
-    SelectableUserAdapter() {
+    public SelectableUserAdapter() {
         mUserList = new ArrayList<>();
         mSelectedUsers = new ArrayList<>();
     }
 
-    void setItemCheckedChangeListener(OnItemCheckedChangeListener listener) {
+    public void setItemCheckedChangeListener(OnItemCheckedChangeListener listener) {
         mItemCheckedChangeListener = listener;
     }
 
-    void setUserList(List<User> users) {
+    public void setUserList(List<User> users) {
         mUserList = users;
     }
 
