@@ -12,7 +12,7 @@
 
     </nav>
     <div class="container">
-      {% for room in rooms %}
+       {% for room in rooms %}
       <div class="card" style="width: 100%;">
 	<div class="topimg" style="background-color:{{colors[loop.index0*2]}}"></div>
 	<div class="card-block" style="background-color:{{colors[loop.index0*2+1]}}">

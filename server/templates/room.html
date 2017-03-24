@@ -1,0 +1,65 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../static/bootstrap4/css/bootstrap.min.css", rel="stylesheet">
+    <link href="../static/css/room.css", rel="stylesheet">
+
+    <title>어따썼니?</title>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidecon">
+	<div class="num">참여인원</div>
+	<div class="numv">{{member|length}}명</div>
+	<div class="owner">Owner</div>
+	<div class="ownername">{{room[3]}}</div>
+	<a href="/room/add/{{rid}}" class="addpeople">없으면 사람 추가하기</a>
+	{% for mem in member %}
+	<div class="membercon">
+	  <img class="memberimg" src="/static/user.png">
+	  <div class="member">{{mem[1]}}</div>
+	</div>
+	{% endfor %}
+      </div>
+    </div>
+    <div class="overlay" style="display:none"></div>
+
+    <nav class="navbar fixed-top navbar-inverse bg-faded">
+      <a class="navbar-brand" href="/main">← &nbsp;&nbsp;&nbsp; {{room[1]}}</a>
+      <span class="sidelist"  onclick="openNav()">&#8801</span>
+      <div class="title">잔액</div>
+      <div class="total">{{total}}원</div>
+      <input class="search" type="text" placeholder="필터...">
+    </nav>
+    <div class="blist" id="blist">
+      {% for tran in trans %}
+      <div class="card" id="card">
+	<div class="card-block">
+	  <h5 class="card-title">{{tran[1]}}</h4>
+	  <h6 class="card-subtitle text-muted">{{tran[2]}}</h6>
+	  <p class="card-text">{{tran[3]}}원</p>
+	  
+	</div>
+      </div>
+      {% endfor %}
+    </div>
+<script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+<script>
+
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "80%";
+  $(".overlay").show();
+  }
+
+  function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  $(".overlay").hide();
+  }
+  </script>
+  </body>
+</html>

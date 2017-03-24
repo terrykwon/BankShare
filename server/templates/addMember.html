@@ -1,0 +1,38 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../../static/bootstrap4/css/bootstrap.min.css", rel="stylesheet">
+    <link href="../../static/css/addMember.css", rel="stylesheet">
+
+    <title>어따썼니?</title>
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-inverse bg-faded">
+      <a class="navbar-brand" href="/room/{{rid}}">← &nbsp;&nbsp;&nbsp; 사람찾기</a>
+    </nav>
+    <div class="container">
+      <input class="search" type="text" placeholder="필터...">
+    </div>
+    <form id="frmadd" method="post" action="/room/add/{{rid}}">
+      <div class="userlist">
+    	{% for user in users %}
+	<div class="usercon">
+	  <img class="userimg" src="/static/user.png">
+	  <div class="user">{{user[0]}}</div>
+	  <div class="userphone">{{user[2]}}</div>
+	  <input type="checkbox" class="form-check-input" name="checkuser" value="{{user[0]}}">
+	</div>
+	{% endfor %}
+      </div>
+      <button href="/adduser" class="plus">추가하기</a>
+    </form>
+
+<script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+
+  </body>
+</html>
