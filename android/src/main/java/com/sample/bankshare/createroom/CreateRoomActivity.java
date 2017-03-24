@@ -19,10 +19,9 @@ import java.util.List;
  */
 
 public class CreateRoomActivity extends AppCompatActivity
-        implements SetUpRoomFragment.OnSetUpRoomListener, SelectUsersFragment.OnUsersSelectedListener {
+        implements SetUpRoomFragment.OnSetUpRoomListener {
 
     private String mRoomName, mRoomDescription;
-    private List<User> mSelectedUsers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,18 +44,6 @@ public class CreateRoomActivity extends AppCompatActivity
     public void onSetUpRoom(String roomName, String roomDescription) {
         mRoomName = roomName;
         mRoomDescription = roomDescription;
-    }
-
-
-    @Override
-    public void onUsersSelected(List<User> users) {
-        mSelectedUsers = users;
-
-        for (User user : mSelectedUsers) {
-            Log.d("CREATE_ROOM", user.getName());
-        }
-
-        createRoom();
     }
 
     // TODO: implement
