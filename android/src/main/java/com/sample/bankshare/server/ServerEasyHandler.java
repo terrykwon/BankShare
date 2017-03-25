@@ -92,7 +92,7 @@ public class ServerEasyHandler {
 
     public static void showRoomContent(OnRoomContentListener listener) {
         RoomContent content = new RoomContent();
-        content.remain = "221400";
+        content.remain = "632,439";
         List<Transaction> transactions = content.transactions = new ArrayList<>();
 
         transactions.add(new Transaction("2017. 03. 25", TransactionAdapter.TRANSACTION_DATE));
@@ -122,7 +122,7 @@ public class ServerEasyHandler {
     }
 
     public static void share(OnShareListener listener) {
-        String shareText = String.format("얼마썼냐 링크입니다. %s/XndornerE",ServerConnector.SERVER_HOST);
+        String shareText = String.format("얼마썼냐 링크입니다. %s/myaccount/XndornerE",ServerConnector.SERVER_HOST);
         listener.onSuccess(shareText);
     }
 
