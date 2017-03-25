@@ -95,27 +95,53 @@ public class ServerEasyHandler {
         content.remain = "632,439";
         List<Transaction> transactions = content.transactions = new ArrayList<>();
 
-        transactions.add(new Transaction("2017. 03. 25", TransactionAdapter.TRANSACTION_DATE));
-        transactions.add(new Transaction("SenderA", 300000L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderB", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderC",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("2017. 03. 24",TransactionAdapter.TRANSACTION_DATE));
-        transactions.add(new Transaction("SenderD",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("2017. 03. 23",TransactionAdapter.TRANSACTION_DATE));
-        transactions.add(new Transaction("SenderA", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderB", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderC",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderD",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("2017. 03. 22",TransactionAdapter.TRANSACTION_DATE));
-        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
-        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
-        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+
+        /*
+2017.03.23	출금	1	632438
+2017.03.23	입금	1	632439
+2017.03.20	입금	7000	632439
+2017.03.17	입금	10	576439
+2017.03.17	입금	7000	583439
+2017.03.17	입금	7000	590439
+2017.03.17	입금	7000	597439
+2017.03.17	입금	7000	604439
+2017.03.17	입금	7000	611439
+2017.03.17	입금	7000	618439
+2017.03.17	입금	7000	625439
+2017.03.16	입금	100	576429
+2017.03.07	입금	200000	576249
+2017.03.07	입금	100	576349
+2017.03.07	출금	10	576339
+2017.03.07	출금	10	576329
+2017.03.03	출금	10	173559
+2017.03.03	입금	10	173569
+        *
+        * */
+
+        transactions.add(new Transaction("2017.03.23", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("출금", 1, 1, TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("입금", 1, 1, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("2017.03.20", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("2017.03.17", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("입금", 10, 10, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 7000, 7000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("2017.03.16", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("입금", 100, 100, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("2017.03.07", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("입금", 200000, 200000, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("입금", 100, 100, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("출금", 10, 10, TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("출금", 10, 10, TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("2017.03.03", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("출금", 10, 10, TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("입금", 10, 10, TransactionAdapter.TRANSACTION_PLUS));
 
 
         listener.onSuccess(content);

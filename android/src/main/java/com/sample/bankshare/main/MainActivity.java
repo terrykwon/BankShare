@@ -13,8 +13,11 @@ import android.view.View;
 import com.sample.bankshare.R;
 import com.sample.bankshare.account.AccountActivity;
 import com.sample.bankshare.createroom.CreateRoomActivity;
+import com.sample.bankshare.model.Room;
 import com.sample.bankshare.server.ServerEasyHandler;
 import com.sample.bankshare.util.DummyGenerator;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
         mRoomRecycler.setLayoutManager(mLayoutManager);
         mRoomRecycler.setAdapter(mRoomAdapter);
 
-        // Debug
-        mRoomAdapter.setRoomList(DummyGenerator.generateDummyRooms());
-
         mCreateRoomFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,20 +62,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void serverDebug(){
 
-        ServerEasyHandler.createRoom("happy", "dappy", new ServerEasyHandler.OnCreateRoomListener() {
+    @Override
+    protected void onResume() {
+        super.onResume();
+        refreshRoomList();
+    }
+
+    private void refreshRoomList() {
+        ServerEasyHandler.showRoomList(new ServerEasyHandler.OnRoomListListener() {
             @Override
-            public void onSuccess() {
-                Log.e("ServerEasyHandler", "onSuccess: ");
+            public void onSuccess(List<Room> list) {
+                mRoomAdapter.setRoomList(list);
             }
 
             @Override
             public void onFail() {
-                Log.e("ServerEasyHandler", "onFail: ");
+
             }
         });
-
     }
 
 
