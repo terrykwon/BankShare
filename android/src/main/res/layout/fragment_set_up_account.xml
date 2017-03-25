@@ -41,7 +41,7 @@
             android:layout_marginTop="110dp">
 
             <TextView
-                android:id="@+id/tv_create_room_description"
+                android:id="@+id/tv_create_room_birth"
                 style="@style/TextStyle13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,10 +49,10 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edittext_set_up_room_description"
+                android:id="@+id/et_create_room_birth"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_below="@id/tv_create_room_description"
+                android:layout_below="@id/tv_create_room_birth"
                 android:background="@drawable/edit_main_background"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp" />
@@ -105,14 +105,14 @@
             android:text="은행선택"
             android:textStyle="bold" />
 
-        <EditText
+        <Spinner
             android:id="@+id/edittext_set_up_room_bank"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:entries="@array/bank"
             android:layout_below="@id/tv_create_room_bank"
             android:background="@drawable/edit_main_background"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+             />
 
     </RelativeLayout>
     <RelativeLayout
@@ -127,7 +127,7 @@
             style="@style/TextStyle13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="생년월일"
+            android:text="계좌번호"
             android:textStyle="bold" />
 
         <EditText

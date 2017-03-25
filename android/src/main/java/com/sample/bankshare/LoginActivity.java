@@ -1,6 +1,7 @@
 package com.sample.bankshare;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -56,10 +57,21 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     protected void redirectSignupActivity() {       //세션 연결 성공 시 SignupActivity로 넘김
-        final Intent intent = new Intent(this, SigninActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(intent);
-        finish();
+        SharedPreferences sharedPreferences = getSharedPreferences("PPAP",MODE_PRIVATE);
+
+        if(sharedPreferences.getString("is_login","")!= null && sharedPreferences.getString("is_login","").equals("y")) {
+            final Intent intent = new Intent(this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(intent);
+            finish();
+        }else{
+            final Intent intent = new Intent(this, SigninActivity.class);
+
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(intent);
+            finish();
+
+        }
     }
 }
 
