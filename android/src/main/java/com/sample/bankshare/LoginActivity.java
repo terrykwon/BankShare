@@ -26,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
-<<<<<<< f96db389d77cdb3ed98b4424d2e365b098adb965
         callback = new SessionCallback();                  // 이 두개의 함수 중요함
         Session.getCurrentSession().addCallback(callback);
 
@@ -67,15 +66,6 @@ public class LoginActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
         finish();
-=======
-        (findViewById(R.id.bt_login_signin)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),SigninActivity.class);
-                startActivity(intent);
-            }
-        });
->>>>>>> um... changed a lot
     }
 }
 

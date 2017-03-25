@@ -94,14 +94,14 @@ public class ServerEasyHandler {
         content.remain = "221400";
         List<Transaction> transactions = content.transactions = new ArrayList<>();
 
-        transactions.add(new Transaction("SenderA", "RecipientA", 12345L, 12345L));
-        transactions.add(new Transaction("SenderB", "RecipientB", 12345L, 12345L));
-        transactions.add(new Transaction("SenderC", "RecipientC", 12345L, 12345L));
-        transactions.add(new Transaction("SenderD", "RecipientD", 12345L, 12345L));
-        transactions.add(new Transaction("SenderE", "RecipientE", 12345L, 12345L));
-        transactions.add(new Transaction("SenderF", "RecipientF", 12345L, 12345L));
-        transactions.add(new Transaction("SenderG", "RecipientG", 12345L, 12345L));
-        transactions.add(new Transaction("SenderH", "RecipientH", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderA", "RecipientA", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderB", "RecipientB", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderC", "RecipientC", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderD", "RecipientD", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderE", "RecipientE", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderF", "RecipientF", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderG", "RecipientG", 12345L, 12345L));
+//        transactions.add(new Transaction("SenderH", "RecipientH", 12345L, 12345L));
 
 
         listener.onSuccess(content);
