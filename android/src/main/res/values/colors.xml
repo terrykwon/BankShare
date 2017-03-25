@@ -12,7 +12,9 @@
     <color name="aqua_blue">#05bae1</color>
     <color name="orange_red">#ff3f19</color>
     <color name="white_two">#eeeeee</color>
+    <color name="white_two_tran">#aaeeeeee</color>
     <color name="pinkish_grey">#bdbdbd</color>
     <color name="greyish">#ababab</color>
-
+    <color name="azure_two">#04b6e6</color>
+    <color name="amber">#ffb705</color>
 </resources>

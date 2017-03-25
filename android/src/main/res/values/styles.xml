@@ -63,8 +63,23 @@
     </style>
 
     <style name="TextStyle8">
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">11sp</item>
         <item name="android:lineSpacingExtra">19sp</item>
         <item name="android:textColor">@color/pinkish_grey</item>
+    </style>
+    <style name="TextStyle11">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">-11sp</item>
+        <item name="android:textColor">@color/azure_two</item>
+    </style>
+    <style name="TextStyle13">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">-11sp</item>
+        <item name="android:textColor">@color/azure</item>
+    </style>
+    <style name="TextStyle12">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">-9sp</item>
+        <item name="android:textColor">@color/greyish</item>
     </style>
 </resources>

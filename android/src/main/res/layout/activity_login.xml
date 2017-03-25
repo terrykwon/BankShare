@@ -12,58 +12,6 @@
         android:layout_marginTop="?attr/actionBarSize">
 
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="50dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="이름"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="112dp" />
-
-            <EditText
-                android:id="@+id/et_login_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="112dp" />
-
-        </android.support.constraint.ConstraintLayout>
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="368dp"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="50dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="생년월일"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="112dp" />
-
-            <EditText
-                android:id="@+id/et_login_birth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="112dp" />
-
-            <EditText
-                android:id="@+id/et_login_birth2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="112dp" />
-
-
-        </android.support.constraint.ConstraintLayout>
-
         <com.kakao.usermgmt.LoginButton
             android:id="@+id/com_kakao_login"
             android:layout_width="match_parent"

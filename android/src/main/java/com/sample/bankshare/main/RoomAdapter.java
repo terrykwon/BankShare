@@ -62,13 +62,13 @@ class RoomAdapter extends RecyclerView.Adapter {
             super(itemView);
 
             nameText = (TextView) itemView.findViewById(R.id.text_room_name);
-            descText = (TextView) itemView.findViewById(R.id.text_room_description);
+            //descText = (TextView) itemView.findViewById(R.id.text_room_description);
 
         }
 
         void bind(Room room, @Nullable final OnItemClickListener clickListener) {
             nameText.setText(room.getName());
-            descText.setText(room.getDescription());
+            //descText.setText(room.getDescription());
 
             if (clickListener != null) {
                 itemView.setOnClickListener(new View.OnClickListener() {

@@ -21,11 +21,7 @@ public class DummyGenerator {
     public static List<Room> generateDummyRooms() {
         List<Room> rooms = new ArrayList<>();
 
-        rooms.add(new Room("RoomA", "This is room A"));
-        rooms.add(new Room("RoomB", "This is room B"));
-        rooms.add(new Room("RoomC", "This is room C"));
-        rooms.add(new Room("RoomD", "This is room D"));
-        rooms.add(new Room("RoomE", "This is room E"));
+        rooms.add(new Room("중랑천 자전거 동호회 회비"));
 
         return rooms;
     }

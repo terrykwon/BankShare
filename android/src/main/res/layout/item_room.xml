@@ -6,64 +6,39 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="288dp"
+    android:layout_height="220dp"
+    android:layout_margin="8dp"
     android:layout_width="match_parent"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="8dp"
     android:foreground="?attr/selectableItemBackground">
 
-    <android.support.constraint.ConstraintLayout
-        android:orientation="vertical" android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@color/colorAccent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="135.5dp"
+            android:background="@drawable/club_main_img"
             android:id="@+id/imageView" />
-
-        <View
-            android:id="@+id/view_room_text_background"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="0dp"
-            android:background="#55000000"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" />
 
         <TextView
             android:id="@+id/text_room_name"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Room name"
-            android:textSize="22sp"
-            app:layout_constraintLeft_toLeftOf="@id/view_room_text_background"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/text_room_description"
-            app:layout_constraintTop_toTopOf="@id/view_room_text_background"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="159dp"
+            style="@style/TextStyle7"
+            android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/text_room_description"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginBottom="16dp"
-            android:text="Room description asdgads gasdgasgdsadg dsagsadga dsgsadgasdg adsgasdga dsgsadg asdgad sgasgads sadgasdgasdg"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@id/view_room_text_background"
-            app:layout_constraintLeft_toLeftOf="@id/view_room_text_background"
-            app:layout_constraintRight_toRightOf="@id/view_room_text_background"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp" />
+            style="@style/TextStyle8"
+            android:text="들어가기"
+            android:layout_below="@id/text_room_name"
+            android:layout_marginLeft="18dp"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>
