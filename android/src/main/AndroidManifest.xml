@@ -27,7 +27,6 @@
         </activity>
         <activity android:name=".account.AccountActivity" />
         <activity android:name=".createroom.CreateRoomActivity" />
-        <activity android:name=".SelectUserActivity" />
     </application>
 
 </manifest>

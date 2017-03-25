@@ -72,9 +72,6 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
-    <!-- Drawer -->
-    <include layout="@layout/layout_account_member_drawer" />
-
 </android.support.v4.widget.DrawerLayout>
 
 

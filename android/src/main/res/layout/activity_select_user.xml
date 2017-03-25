@@ -33,7 +33,7 @@
     </android.support.v7.widget.RecyclerView>
 
     <Button
-        android:id="@id/button_select_user_invite"
+        android:id="@+id/button_select_user_invite"
         android:text="INVITE"
         android:layout_width="0dp"
         android:layout_height="56dp"

@@ -2,7 +2,6 @@ package com.sample.bankshare.util;
 
 import com.sample.bankshare.model.Room;
 import com.sample.bankshare.model.Transaction;
-import com.sample.bankshare.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,17 +29,6 @@ public class DummyGenerator {
         return rooms;
     }
 
-    public static List<User> generateDummyUsers() {
-        List<User> users = new ArrayList<>();
-
-        users.add(new User("User1", "010-1234-1234"));
-        users.add(new User("User2", "010-2345-2345"));
-        users.add(new User("User3", "010-3456-3456"));
-        users.add(new User("User4", "010-4567-4567"));
-        users.add(new User("User5", "010-5678-5678"));
-
-        return users;
-    }
 
     public static List<Transaction> generateDummyTransactions() {
         List<Transaction> transactions = new ArrayList<>();
