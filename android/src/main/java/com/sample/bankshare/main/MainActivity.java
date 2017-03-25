@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.sample.bankshare.R;
 import com.sample.bankshare.account.AccountActivity;
 import com.sample.bankshare.createroom.CreateRoomActivity;
+import com.sample.bankshare.server.ServerConnector;
+import com.sample.bankshare.server.ServerEasyHandler;
+import com.sample.bankshare.server.result.Result;
+import com.sample.bankshare.server.result.ResultShowRoomList;
 import com.sample.bankshare.util.DummyGenerator;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        serverDebug();
 
         mCreateRoomFab = (FloatingActionButton) findViewById(R.id.fab_main_create_room);
 
@@ -57,4 +64,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void serverDebug(){
+
+        ServerEasyHandler.createRoom("happy", "dappy", new ServerEasyHandler.OnCreateRoomListener() {
+            @Override
+            public void onSuccess() {
+                Log.e("ServerEasyHandler", "onSuccess: ");
+            }
+
+            @Override
+            public void onFail() {
+                Log.e("ServerEasyHandler", "onFail: ");
+            }
+        });
+
+    }
+
+
 }
