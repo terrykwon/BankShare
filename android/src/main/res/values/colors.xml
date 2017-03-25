@@ -14,5 +14,7 @@
     <color name="white_two">#eeeeee</color>
     <color name="pinkish_grey">#bdbdbd</color>
     <color name="greyish">#ababab</color>
+    <color name="white_three">#e5e5e5</color>
+    <color name="azure_two">#04b6e6</color>
 
 </resources>
