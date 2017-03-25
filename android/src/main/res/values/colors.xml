@@ -3,4 +3,16 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#ACACAC</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="turquoise_blue">#09ccc8</color>
+    <color name="azure">#00a3ff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_54">#8affffff</color>
+    <color name="dark_blue_25">#40060056</color>
+    <color name="dirty_purple">#444344</color>
+    <color name="aqua_blue">#05bae1</color>
+    <color name="orange_red">#ff3f19</color>
+    <color name="white_two">#eeeeee</color>
+    <color name="pinkish_grey">#bdbdbd</color>
+    <color name="greyish">#ababab</color>
+
 </resources>
