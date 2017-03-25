@@ -41,7 +41,7 @@ public class CreateRoomActivity extends AppCompatActivity
     }
 
     // TODO: implement
-    private void createRoom() {
+    public void createRoom() {
         finish();
     }
 }

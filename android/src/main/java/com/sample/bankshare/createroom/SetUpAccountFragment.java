@@ -20,7 +20,12 @@ public class SetUpAccountFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_set_up_account, container, false);
-
+        (rootView.findViewById(R.id.button_set_up_room_next)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((CreateRoomActivity)getActivity()).createRoom();
+            }
+        });
         return rootView;
     }
 
