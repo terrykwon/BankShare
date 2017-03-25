@@ -1,9 +1,9 @@
 package com.sample.bankshare.main;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -13,10 +13,7 @@ import android.view.View;
 import com.sample.bankshare.R;
 import com.sample.bankshare.account.AccountActivity;
 import com.sample.bankshare.createroom.CreateRoomActivity;
-import com.sample.bankshare.server.ServerConnector;
 import com.sample.bankshare.server.ServerEasyHandler;
-import com.sample.bankshare.server.result.Result;
-import com.sample.bankshare.server.result.ResultShowRoomList;
 import com.sample.bankshare.util.DummyGenerator;
 
 public class MainActivity extends AppCompatActivity {
