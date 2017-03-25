@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
-            android:layout_marginTop="36dp">
+            android:layout_marginTop="26dp">
 
             <TextView
                 android:id="@+id/tv_create_room_name"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
-            android:layout_marginTop="130dp">
+            android:layout_marginTop="120dp">
 
             <TextView
                 android:id="@+id/tv_create_room_description"

@@ -82,6 +82,11 @@
         <item name="android:lineSpacingExtra">-13sp</item>
         <item name="android:textColor">@color/azure</item>
     </style>
+    <style name="TextStyle15">
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">-5sp</item>
+        <item name="android:textColor">@color/greyish</item>
+    </style>
     <style name="TextStyle12">
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">-9sp</item>
