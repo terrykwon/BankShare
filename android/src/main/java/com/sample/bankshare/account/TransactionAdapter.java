@@ -25,6 +25,7 @@ public class TransactionAdapter extends RecyclerView.Adapter{
         mTransactionList = transactions;
         notifyDataSetChanged();
     }
+    //테스트 커밋
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
