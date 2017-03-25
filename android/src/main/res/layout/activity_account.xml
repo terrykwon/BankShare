@@ -39,6 +39,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
+                            android:id="@+id/iv_account_back"
                             android:layout_marginLeft="16dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -52,7 +53,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:paddingLeft="72.5dp"
+                            android:paddingLeft="67.5dp"
                             android:text="동호회 이름" />
 
                         <View

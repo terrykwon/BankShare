@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.sample.bankshare.R;
 import com.sample.bankshare.util.DummyGenerator;
@@ -28,7 +30,12 @@ public class AccountActivity extends AppCompatActivity {
 
         mTransactionRecycler.setLayoutManager(mTransactionLayoutManager);
         mTransactionRecycler.setAdapter(mTransactionAdapter);
-
+        ((ImageView)findViewById(R.id.iv_account_back)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         // Debug
         mTransactionAdapter.setTransactionList(DummyGenerator.generateDummyTransactions());
     }
