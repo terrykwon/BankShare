@@ -1,5 +1,6 @@
 package com.sample.bankshare.server;
 
+import com.sample.bankshare.account.TransactionAdapter;
 import com.sample.bankshare.model.Room;
 import com.sample.bankshare.model.RoomContent;
 import com.sample.bankshare.model.Transaction;
@@ -94,14 +95,27 @@ public class ServerEasyHandler {
         content.remain = "221400";
         List<Transaction> transactions = content.transactions = new ArrayList<>();
 
-//        transactions.add(new Transaction("SenderA", "RecipientA", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderB", "RecipientB", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderC", "RecipientC", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderD", "RecipientD", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderE", "RecipientE", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderF", "RecipientF", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderG", "RecipientG", 12345L, 12345L));
-//        transactions.add(new Transaction("SenderH", "RecipientH", 12345L, 12345L));
+        transactions.add(new Transaction("2017. 03. 25", TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("SenderA", 300000L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderB", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderC",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("2017. 03. 24",TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("SenderD",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("2017. 03. 23",TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("SenderA", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderB", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderC",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderD",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("2017. 03. 22",TransactionAdapter.TRANSACTION_DATE));
+        transactions.add(new Transaction("SenderE", 12345L, 12345L, TransactionAdapter.TRANSACTION_PLUS));
+        transactions.add(new Transaction("SenderF",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
+        transactions.add(new Transaction("SenderG",  12345L, 12345L,TransactionAdapter.TRANSACTION_MINUS));
 
 
         listener.onSuccess(content);

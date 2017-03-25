@@ -1,17 +1,11 @@
 package com.sample.bankshare;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 
-import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.ISessionCallback;
-import com.kakao.auth.KakaoAdapter;
 import com.kakao.auth.Session;
-
-import com.kakao.util.*;
 import com.kakao.util.exception.KakaoException;
 import com.kakao.util.helper.log.Logger;
 import com.sample.bankshare.main.MainActivity;

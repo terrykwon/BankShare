@@ -6,17 +6,13 @@ import android.util.Log;
 import com.sample.bankshare.server.result.Result;
 import com.sample.bankshare.server.result.ResultFail;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.ProtocolException;
 import java.net.URL;
-import java.net.URLEncoder;
 
 /**
  * Created by jj on 26/03/2017.
