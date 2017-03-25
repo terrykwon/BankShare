@@ -6,20 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.sample.bankshare.LoginActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize">
-
+        android:background="@drawable/img_login"
+        android:layout_height="match_parent">
 
         <com.kakao.usermgmt.LoginButton
             android:id="@+id/com_kakao_login"
+            android:layout_margin="18dp"
+            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
+            android:background="@drawable/btn_login"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            android:layout_gravity="bottom"/>
 
 
 
@@ -37,6 +36,6 @@
             <!--app:layout_constraintLeft_toLeftOf="parent"-->
             <!--app:layout_constraintRight_toRightOf="parent" />-->
 
-    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
