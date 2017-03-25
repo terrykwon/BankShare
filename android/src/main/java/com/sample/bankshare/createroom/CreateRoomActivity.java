@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.sample.bankshare.R;
+import com.sample.bankshare.server.ServerEasyHandler;
 
 /**
  * Activity for creating a new room.
@@ -42,6 +43,19 @@ public class CreateRoomActivity extends AppCompatActivity
 
     // TODO: implement
     public void createRoom() {
+        ServerEasyHandler.createRoom(mRoomName, mRoomDescription, new ServerEasyHandler.OnCreateRoomListener() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onFail() {
+
+            }
+        });
+
+
         finish();
     }
 }
